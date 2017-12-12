@@ -5,7 +5,7 @@ Same as using `text-overflow: ellipsis;` but with preview of full text.
 ## Installation
 
 * install addon: `ember install ember-text-overflow`
-* import styles in apps.scss file: `@import "ember-text-overflow"`
+* import styles in `app.scss` file: `@import "ember-text-overflow"`
 
 ## Usage
 
