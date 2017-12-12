@@ -1,0 +1,34 @@
+.text-overflow {
+  position: relative;
+  overflow: visible;
+
+  .text-overflow-overlay {
+    box-sizing: border-box;
+    transition: opacity .3s ease-in-out;
+    &.text-overlay-hidden {
+      opacity: 0;
+    }
+    z-index: 1000;
+    position: absolute;
+    white-space: nowrap;
+    pointer-events: none;
+    &:before {
+      border-radius: 4px;
+      content: " ";
+      z-index: -1;
+      position: absolute;
+      top: -2px;
+      bottom: -2px;
+      left: -2px;
+      right: -2px;
+      background-color: #F7F7F9;
+      border: 1px solid #ECECF0;
+    }
+  }
+
+  .text-overflow-container {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+}
