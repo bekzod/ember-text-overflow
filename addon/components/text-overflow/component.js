@@ -4,7 +4,7 @@ import layout from './template';
 
 export default Component.extend({
   layout,
-  classNames: ['text-overflow'],
+  classNames: ['ember-text-overflow'],
   isOverlayVisible: false,
 
   mouseEnter() {
