@@ -1,26 +1,20 @@
-# ember-text-overflow
+# ember-text-overflow [![Ember Observer Score](http://emberobserver.com/badges/ember-text-overflow.svg)](http://emberobserver.com/addons/ember-text-overflow) [![npm version](https://badge.fury.io/js/ember-text-overflow.svg)](https://badge.fury.io/js/ember-text-overflow) [![travis status](https://travis-ci.org/bekzod/ember-text-overflow.svg)](https://travis-ci.org/bekzod/ember-text-overflow.svg)
 
-This README outlines the details of collaborating on this Ember addon.
+Same as using `text-overflow: ellipsis;` but with preview of full text.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
-* `cd ember-text-overflow`
-* `npm install`
+* install addon: `ember install ember-text-overflow`
+* import styles in apps.scss file: `@import "ember-text-overflow"`
 
-## Running
+## Usage
 
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
+```handlebars
+  {{#text-overflow class="small-container"}}
+    long long long long long long long long text
+  {{/text-overflow}}
+```
 
-## Running Tests
+## Limitations
+Works with inline text, wrapping container should have `overflow: visible`.
 
-* `npm test` (Runs `ember try:each` to test your addon against multiple Ember versions)
-* `ember test`
-* `ember test --server`
-
-## Building
-
-* `ember build`
-
-For more information on using ember-cli, visit [https://ember-cli.com/](https://ember-cli.com/).
