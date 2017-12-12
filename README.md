@@ -15,6 +15,10 @@ Same as using `text-overflow: ellipsis;` but with preview of full text.
   {{/text-overflow}}
 ```
 
+## Demo
+
+![demo gif](https://cl.ly/2D313l1y0w45/Screen%20Recording%202017-12-12%20at%2012.06%20PM.gif)
+
 ## Limitations
 Works with inline text, wrapping container should have `overflow: visible`
 
