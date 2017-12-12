@@ -16,5 +16,5 @@ Same as using `text-overflow: ellipsis;` but with preview of full text.
 ```
 
 ## Limitations
-Works with inline text, wrapping container should have `overflow: visible`.
+Works with inline text, wrapping container should have `overflow: visible`
 

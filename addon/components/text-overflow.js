@@ -1,6 +1,6 @@
 import Component from '@ember/component';
 import { set } from "@ember/object"
-import layout from './template';
+import layout from '../templates/components/text-overflow';
 
 export default Component.extend({
   layout,
