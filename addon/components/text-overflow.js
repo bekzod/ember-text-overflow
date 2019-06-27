@@ -2,21 +2,26 @@ import Component from '@ember/component';
 import { set } from "@ember/object"
 import layout from '../templates/components/text-overflow';
 
-export default Component.extend({
-  layout,
-  classNames: ['ember-text-overflow'],
-  isOverlayVisible: false,
+export default class TextOverflow extends Component {
+
+  init() {
+    super.init(...arguments);
+    this.set('layout', layout);
+    this.set('isOverlayVisible', false);
+    this.set('classNames', ['ember-text-overflow']);
+  }
 
   mouseEnter() {
-    let containerWidth = this.$().width();
-    let overlayWidth = this.$('.text-overflow-overlay').width();
+    let { element } = this;
+    let containerWidth = element.offsetWidth;
+    let overlayWidth = element.querySelector('.text-overflow-overlay').offsetWidth;
     set(this, 'isOverlayVisible', overlayWidth > containerWidth);
-    this._super(...arguments);
-  },
+    super.mouseEnter(...arguments);
+  }
 
   mouseLeave() {
     set(this, 'isOverlayVisible', false);
-    this._super(...arguments);
+    super.mouseLeave(...arguments);
   }
 
-});
+}
