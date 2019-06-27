@@ -1,5 +1,10 @@
 @import 'ember-text-overflow';
 
+.container {
+  margin: 50px auto;
+  max-width: 800px;
+}
+
 .small-container {
   max-width: 80px;
 }
