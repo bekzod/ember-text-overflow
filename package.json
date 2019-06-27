@@ -50,6 +50,7 @@
     "node": "6.* || >= 7.*"
   },
   "ember-addon": {
-    "configPath": "tests/dummy/config"
+    "configPath": "tests/dummy/config",
+    "demoURL": "http://ember-text-overflow.surge.sh"
   }
 }
