@@ -16,12 +16,10 @@ export default class TextOverflow extends Component {
     let containerWidth = element.offsetWidth;
     let overlayWidth = element.querySelector('.text-overflow-overlay').offsetWidth;
     set(this, 'isOverlayVisible', overlayWidth > containerWidth);
-    super.mouseEnter(...arguments);
   }
 
   mouseLeave() {
     set(this, 'isOverlayVisible', false);
-    super.mouseLeave(...arguments);
   }
 
 }
