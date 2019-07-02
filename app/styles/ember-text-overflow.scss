@@ -12,6 +12,10 @@
     position: absolute;
     white-space: nowrap;
     pointer-events: none;
+    &.align-right {
+      right: 0;
+    }
+
     &:before {
       border-radius: 4px;
       content: " ";

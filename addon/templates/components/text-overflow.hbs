@@ -1,4 +1,4 @@
-<div class="text-overflow-overlay {{unless isOverlayVisible 'text-overlay-hidden'}}">
+<div class="text-overflow-overlay {{if @alignRight 'align-right'}} {{unless isOverlayVisible 'text-overlay-hidden'}}">
   {{yield}}
 </div>
 <div class="text-overflow-container">
