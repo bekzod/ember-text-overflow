@@ -1,11 +1,11 @@
 <div class="container">
   <h2 id="title">Ember Text Overflow</h2>
-
-  {{#text-overflow class="small-container"}}
+  <TextOverflow @class="small-container">
     hover me long long long long long long long long text
-  {{/text-overflow}}
+  </TextOverflow>
   <br>
-  {{#text-overflow class="small-container"}}
+
+  <TextOverflow @alignRight=true @class="small-container">
     another hover me long long long long long long long long text
-  {{/text-overflow}}
+  </TextOverflow>
 </div>
