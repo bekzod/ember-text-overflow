@@ -12,9 +12,11 @@ ember install ember-text-overflow
 ## Usage
 
 ```handlebars
-  {{#text-overflow class="small-container"}}
-    long long long long long long long long text
-  {{/text-overflow}}
+  <div class="small-container">
+    <TextOverflow>
+      long long long long long long long long text
+    </TextOverflow>
+  </div>
 ```
 
 ```scss
