@@ -13,9 +13,8 @@ export default class TextOverflow extends Component {
 
   mouseEnter() {
     let { element } = this;
-    let containerWidth = element.offsetWidth;
-    let overlayWidth = element.querySelector('.text-overflow-overlay').offsetWidth;
-    set(this, 'isOverlayVisible', overlayWidth > containerWidth);
+    let el = element.querySelector('.text-overflow-container');
+    set(this, 'isOverlayVisible', el.offsetWidth < el.scrollWidth);
   }
 
   mouseLeave() {
